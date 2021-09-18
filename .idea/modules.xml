@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/icu.sgwxm.springcloud-demo.iml" filepath="$PROJECT_DIR$/icu.sgwxm.springcloud-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-consumer/springcloud-consumer.iml" filepath="$PROJECT_DIR$/springcloud-consumer/springcloud-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-mybatisplus/springcloud-mybatisplus.iml" filepath="$PROJECT_DIR$/springcloud-mybatisplus/springcloud-mybatisplus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-nacos/springcloud-nacos.iml" filepath="$PROJECT_DIR$/springcloud-nacos/springcloud-nacos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-provider/springcloud-provider.iml" filepath="$PROJECT_DIR$/springcloud-provider/springcloud-provider.iml" />
+    </modules>
+  </component>
+</project>

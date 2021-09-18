@@ -1,0 +1,11 @@
+server:
+  port: 9003
+
+spring:
+  application:
+    name: consumer-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.56.103:8848
+        namespace: 27ec3d79-250a-41a1-ba54-260371314c7a # ??????nacos?????????

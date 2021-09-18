@@ -1,0 +1,24 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: nacos-server # 服务名
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.56.103:8848 #nacos服务地址
+        namespace: 27ec3d79-250a-41a1-ba54-260371314c7a # 命名空间，在nacos界面上新增操作空间
+      config:
+        file-extension: yaml #文件类型，名字是默认用服务名
+        namespace: 27ec3d79-250a-41a1-ba54-260371314c7a #命名空间
+        server-addr: 192.168.56.103:8848  #nacos服务地址
+
+        # 拓展extension-configs文件，
+        # data-id 的文件后缀必须和配置格式一样
+        # data-id名称，这个名字在nacos新建的时候，后缀要一起带上，不能和默认的config，新建的时候只用服务名
+        # data-id不支持动态刷新，需要配置refresh=true
+        ext-config:
+          - dataId: test0.yaml
+            group: DEFAULT_GROUP
+            refresh: true

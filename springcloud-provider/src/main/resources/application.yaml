@@ -1,0 +1,19 @@
+server:
+  port: 9002
+
+spring:
+  application:
+    name: provider-service
+  datasource:
+    url: jdbc:mysql://192.168.56.103/test?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowMultiQueries=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.56.103:8848
+        namespace: 27ec3d79-250a-41a1-ba54-260371314c7a # 命名空间，在nacos界面上新增操作空间
+mybatis:
+  mapperLocations: classpath:mapper/*Mapper.xml
+  type-aliases-package: icu.sgwxm.entities
